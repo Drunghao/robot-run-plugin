@@ -1,5 +1,5 @@
 ## build
-   open idea ,create Plugin Project,use this source.
+   open idea, open this source, open Project Structure>SDKs, set IntelliJ Platform Plugin SDK, add python Libraries, set Artifacts, finally Build Artifacts.
    
 ## feature
 - run robot framework from python

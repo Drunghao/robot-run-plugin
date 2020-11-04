@@ -1,23 +1,15 @@
 <idea-plugin>
   <id>com.github.youwi.runrobot.plugin</id>
   <name>Run Robot Framework TestCase</name>
-  <version>1.0</version>
+  <version>1.1</version>
   <vendor email="youwi@github.com" url="https://github.com/youwi/robot-run-plugin">robot-run-plugin</vendor>
 
-  <description><![CDATA[
-      run testcase by python <br>
-      support debug python, !not debug robot file ! <br>
-      support pycharm <br>
-      support *.robot <br>
-      Enter short description for your plugin here.<br>
-      <em>most HTML tags may be used</em>
-    ]]></description>
+  <description>
+      support debug python! not debug robot file!
+      support pycharm.
+      support *.robot</description>
 
-  <change-notes><![CDATA[
-      Add change notes here.<br>
-      <em>most HTML tags may be used</em>
-    ]]>
-  </change-notes>
+  <change-notes>Add -C and -d option. Self usage with enhancement by ZH.</change-notes>
 
   <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
   <idea-version since-build="173.0"/>
@@ -28,7 +20,8 @@
   <depends>com.intellij.modules.python</depends>
   -->
   <depends>com.intellij.modules.python</depends>
-
+<!--    <depends>com.intellij.modules.java</depends>-->
+<!--    <depends>PythonCore</depends>-->
 
   <extensions defaultExtensionNs="com.intellij">
     <!-- Add your extensions here -->

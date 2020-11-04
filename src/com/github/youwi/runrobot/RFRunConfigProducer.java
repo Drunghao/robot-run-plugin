@@ -14,7 +14,8 @@ import com.jetbrains.python.run.PythonRunConfiguration;
 import java.util.HashMap;
 import java.util.Map;
 
-public class RFRunConfigProducer extends RunConfigurationProducer<PythonRunConfiguration> {
+public class
+RFRunConfigProducer extends RunConfigurationProducer<PythonRunConfiguration> {
     public RFRunConfigProducer() {
         super(PythonConfigurationType.getInstance());
     }
@@ -105,7 +106,7 @@ public class RFRunConfigProducer extends RunConfigurationProducer<PythonRunConfi
     }
 
     public String buildParameters(String testCaseName, String scriptFileName) {
-        return " -t \"" + testCaseName + "\" " + scriptFileName;
+        return " -C ansi -d output -t \"" + testCaseName + "\" " + scriptFileName;
     }
 
 
